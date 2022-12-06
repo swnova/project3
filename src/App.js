@@ -1,10 +1,10 @@
-import "./styles/App.css";
-import homepage from "./pages/homepage";
-import login from "./pages/login";
-import playpage from "./pages/playpage";
-import finalscore from "./pages/finalscore";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+//import "./styles/App.css";
+import Homepage from "./pages/homepage";
+import Login from "./pages/login";
+import Playpage from "./pages/playpage";
+import Finalscore from "./pages/finalscore";
+import Header from "./Components/header/index.js";
+import Footer from "./Components/footer/index.js";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
