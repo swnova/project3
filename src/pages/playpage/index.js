@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Play Page() {
+export default function PlayPage() {
   return (
     <div>Play Page</div>
   )
