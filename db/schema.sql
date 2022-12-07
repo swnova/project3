@@ -1,2 +1,0 @@
-DROP DATABASE IF EXISTS vroom_db;
-CREATE DATABASE vroom_db;

@@ -33,9 +33,9 @@ export default function LogIn() {
             </div>
           </form>
         </div>
-        <div class="text-sm mt-5 text-center">
+        <div class="text-sm text-red-500 mt-5 text-center">
           New Player? Enter your name, password and{" "}
-          <button class="bg-red-500 p-1 text-sm" id="signUpButton">
+          <button class="bg-red-500 p-1 text-sm text-black" id="signUpButton">
             {" "}
             Sign In
           </button>
