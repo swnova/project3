@@ -2,6 +2,7 @@
 import Homepage from "./pages/homepage/index.js";
 import Login from "./pages/login/index.js";
 import Playpage from "./pages/playpage/index.js";
+import Startpage from "./pages/startpage/index.js";
 import Finalscore from "./pages/finalscore/index.js";
 import Header from "./Components/header/index.js";
 import Footer from "./Components/footer/index.js";
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Homepage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/playpage" element={<Playpage />} />
+        <Route path="/startpage" element={<Startpage />} />
         <Route path="/finalscore" element={<Finalscore />} />
       </Routes>
       <Footer />

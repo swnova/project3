@@ -1,12 +1,12 @@
 import React from "react";
+import "./login.css";
 import { Link } from "react-router-dom";
 
 export default function LogIn() {
   return (
     <div>
-      Log In
       <div class="flex flex-col justify-center items-center w-full h-full p-5">
-        <div class="signInBox border">
+        <div class="signInBox border-current border-solid border-4">
           <form class="flex flex-col justify-center items-center m-5">
             <div class="m-2">
               <input
@@ -17,7 +17,7 @@ export default function LogIn() {
                 placeholder="username"
               />
             </div>
-            <div class="m-2">
+            <div class="m-4 ">
               <input
                 class="rounded text-lg  text-center"
                 type="password"
@@ -27,7 +27,7 @@ export default function LogIn() {
               />
             </div>
             <div class="mt-4">
-              <button class="bg-sky-500 p-2" id="signInButton">
+              <button class="bg-red-500 p-2" id="signInButton">
                 {" "}
                 Sign In
               </button>
@@ -35,10 +35,10 @@ export default function LogIn() {
           </form>
         </div>
         <div class="text-sm mt-5 text-center">
-          New User? Enter your desired username and password and{" "}
-          <button class="bg-sky-500 p-1 text-sm" id="signUpButton">
+          New Player? Enter your name, password and{" "}
+          <button class="bg-red-500 p-1 text-sm" id="signUpButton">
             {" "}
-            Sign Up
+            Sign In
           </button>
         </div>
       </div>
