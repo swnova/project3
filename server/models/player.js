@@ -2,14 +2,20 @@ const { Schema, model } = require('mongoose');
 
 const playerSchema = new Schema(
     {
-        name: {
+        playerName: {
             type: String,
             required: true,
             unique: true,
-            trim: true
         },
-        playerScore: {
-            type: Number
+        email: {
+            type: String,
+            required: true,
+            unique: true,
+            match: [/.+@.+\..+/, 'Must use a valid email address'],
+        },
+        password: {
+            type: String,
+            required: true,
         },
         playerLvl: {
             type: Number
