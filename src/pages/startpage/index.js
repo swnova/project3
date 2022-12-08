@@ -4,12 +4,12 @@ import "./startpage.css";
 export default function StartPage() {
 
   return <div>Start Page
- <div class="flex flex-col justify-center items-center w-full h-full p-5">
-        <div class="homepage border  border-double border-5 border-lime-500">
-          <form class="flex flex-col justify-center items-center m-5">
-            <div class="mt-4">
+ <div className="flex flex-col justify-center items-center w-full h-full p-5">
+        <div className="homepage border  border-double border-5 border-lime-500">
+          <form className="flex flex-col justify-center items-center m-5">
+            <div className="mt-4">
               <button
-                class="bg-red-800 text-lime-500 text-2xl p-2"
+                className="bg-red-800 text-lime-500 text-2xl p-2"
                 id="singlePlayerButton"
               >
                 {" "}
@@ -19,12 +19,12 @@ export default function StartPage() {
           </form>
         </div>
       </div>
-      <div class="flex flex-col justify-center items-center w-full h-full p-5">
-        <div class="homepage border  border-double border-5 border-lime-500">
-          <form class="flex flex-col justify-center items-center m-5">
-            <div class="mt-4">
+      <div className="flex flex-col justify-center items-center w-full h-full p-5">
+        <div className="homepage border  border-double border-5 border-lime-500">
+          <form className="flex flex-col justify-center items-center m-5">
+            <div className="mt-4">
               <button
-                class="bg-red-800  text-lime-500 text-2xl p-2"
+                className="bg-red-800  text-lime-500 text-2xl p-2"
                 id="mulitPlayerButton"
               >
                 {" "}
