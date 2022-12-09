@@ -1,6 +1,7 @@
 import React from "react";
 import "./login.css";
-import { Link } from "react-router-dom";
+import { useState } from 'react'
+
 
 export default function register() {
 	const [name, setName] = useState('')
@@ -10,7 +11,7 @@ export default function register() {
 	async function registerUser(event) {
 		event.preventDefault()
 
-		const response = await fetch('http://vroom-backendsw/api/register', {
+		const response = await fetch('https://vroom-backendsw.herokuapp.com/api/players', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',
