@@ -7,25 +7,24 @@ export default function Playpage() {
       Play Page
       
       <div className="imagebox"></div>
-      <h3>asdfasdfdfdsfafsadasdf</h3>
       <div className="table">
         <div className="column">asdfasdfdfdsfafsadasdfasdfaf
-        <div className="column">asdfasdfdfdsfafsadasdfasdfaf</div>
-        <div className="column">asdfasdfdfdsfafsadasdfasdfaf</div>
-        <div className="column">asdfasdfdfdsfafsadasdfasdfaf</div>
-        <div className="column">asdfasdfdfdsfafsadasdfasdfaf</div>
+        <div className="column1">asdfasdfdfdsfafsadasdfasdfaf</div>
+        <div className="column1">asdfasdfdfdsfafsadasdfasdfaf</div>
+        <div className="column1">asdfasdfdfdsfafsadasdfasdfaf</div>
+        <div className="column1">asdfasdfdfdsfafsadasdfasdfaf</div>
         </div>
         <div className="column">asdfasdfdfdsfafsadasdfasdfaf
-        <div className="column">asdfasdfdfdsfafsadasdfasdfaf</div>
-        <div className="column">asdfasdfdfdsfafsadasdfasdfaf</div>
-        <div className="column">asdfasdfdfdsfafsadasdfasdfaf</div>
-        <div className="column">asdfasdfdfdsfafsadasdfasdfaf</div>
+        <div className="column1">asdfasdfdfdsfafsadasdfasdfaf</div>
+        <div className="column1">asdfasdfdfdsfafsadasdfasdfaf</div>
+        <div className="column1">asdfasdfdfdsfafsadasdfasdfaf</div>
+        <div className="column1">asdfasdfdfdsfafsadasdfasdfaf</div>
         </div>
         <div className="column">asdfasdfdfdsfafsadasdfasdfaf
-        <div className="column">asdfasdfdfdsfafsadasdfasdfaf</div>
-        <div className="column">asdfasdfdfdsfafsadasdfasdfaf</div>
-        <div className="column">asdfasdfdfdsfafsadasdfasdfaf</div>
-        <div className="column">asdfasdfdfdsfafsadasdfasdfaf</div>
+        <div className="column1">asdfasdfdfdsfafsadasdfasdfaf</div>
+        <div className="column1">asdfasdfdfdsfafsadasdfasdfaf</div>
+        <div className="column1">asdfasdfdfdsfafsadasdfasdfaf</div>
+        <div className="column1">asdfasdfdfdsfafsadasdfasdfaf</div>
         </div>
       </div>
     </div>

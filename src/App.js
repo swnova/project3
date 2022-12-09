@@ -6,6 +6,7 @@ import Startpage from "./pages/startpage/index.js";
 import Finalscore from "./pages/finalscore/index.js";
 import Header from "./Components/header/index.js";
 import Footer from "./Components/footer/index.js";
+// import Duringplayheader from "./Components/duringplayheader/index.js";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
