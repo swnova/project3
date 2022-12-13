@@ -54,32 +54,27 @@ export default function Playpage({ currentPage, handlePageChange }) {
     <div>
         
       <div className="imagebox"></div>
-      <div className="table">
+      <div className="table d-inline-flex p-2">
         <div className="column">
           asdfasdfdfdsfafsadasdfasdfaf
           <div className="column1">asdfasdfdfdsfafsadasdfasdfaf</div>
           <div className="column1">asdfasdfdfdsfafsadasdfasdfaf</div>
           <div className="column1">asdfasdfdfdsfafsadasdfasdfaf</div>
           <div className="column1">asdfasdfdfdsfafsadasdfasdfaf</div>
+          </div>
+          
+      
+      
         </div>
-        <div className="column">
-          asdfasdfdfdsfafsadasdfasdfaf
-          <div className="column1">asdfasdfdfdsfafsadasdfasdfaf</div>
-          <div className="column1">asdfasdfdfdsfafsadasdfasdfaf</div>
-          <div className="column1">asdfasdfdfdsfafsadasdfasdfaf</div>
-          <div className="column1">asdfasdfdfdsfafsadasdfasdfaf</div>
-        </div>
-        <div className="column">
-          asdfasdfdfdsfafsadasdfasdfaf
-          <div className="column1">asdfasdfdfdsfafsadasdfasdfaf</div>
-          <div className="column1">asdfasdfdfdsfafsadasdfasdfaf</div>
-          <div className="column1">asdfasdfdfdsfafsadasdfasdfaf</div>
-          <div className="column1">asdfasdfdfdsfafsadasdfasdfaf</div>
-        </div>
-      </div>
-      <Link to="/finalscore" className="link-btn">
+        <Link to="/finalscore" className="link-btn">
         Finished Playing?
       </Link>
+        <div className="playagainbtn">
+        <button>Another Round?</button>
+        </div>
+     
+        
+      
       
       <Modal isOpen={isOpen}>
         <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
