@@ -7,18 +7,33 @@ body {
     height: 200px;
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
+    margin-bottom: 10vh;
 }
 
 .table{
-    border: 2px solid black;
+    border: 8px solid darkgreen;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    border-style: dashed;
+    border-radius: 30px;
 }
 
 .column {
-    border: 2px solid red;
+    border: 4px solid brown;
     flex-grow: 1;
     text-align: center;
     max-width: 24vw;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.column1 {
+    border: 2px solid blue;
+    border-radius: 2px;
+}
+
+.column div {
+    padding: 5px;
 }

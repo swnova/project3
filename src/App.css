@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+.link-btn {
+  padding: 5px;
+  background-color: #61dafb;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+.link-btn:hover {
+  background-color: #61caea;
+}
+
+text {
+  
+}
