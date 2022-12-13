@@ -43,6 +43,9 @@
   border: 1px solid black;
   border-radius: 5px;
   cursor: pointer;
+  color:black;
+  font-weight: bolder;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 
 }
 
@@ -50,6 +53,3 @@
   background-color: #61caea;
 }
 
-text {
-  
-}

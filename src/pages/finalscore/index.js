@@ -1,61 +1,63 @@
 import React from "react";
+import "./finalscore.css";
 import { Link } from "react-router-dom";
 import InfoModal from "../infomodal/index.js";
 
 export default function FinalScore() {
   return (
-    <div>
+    <div className="finalpage">
       <InfoModal />
-      <table className="border-separate border-spacing-2 border-blue-800 border-6 ...">
+      <table className="border-separate">
         <thead>
           <tr>
-            <th className="border border-purple-500 border-y-8 text-5xl backdrop-hue-rotate-90 text-red-500 ...">
+            <th className="finaltablehead">
               Correct
             </th>
-            <th className="border border-purple-500 border-y-8 text-5xl backdrop-hue-rotate-90 text-red-500 ...">
+            <th className="finaltablehead">
               Wrong
             </th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td className="border border-slate-500 backdrop-hue-rotate-90 text-red-500 ...">
+            <td className="finaltable">
               asdfas
             </td>
-            <td className="border border-slate-500 backdrop-hue-rotate-90 text-red-500 ...">
+            <td className="finaltable">
               asdfs
             </td>
           </tr>
           <tr>
-            <td className="border border-slate-500 backdrop-hue-rotate-90 text-red-500 ...">
+            <td className="finaltable">
               Ohio
             </td>
-            <td className="border border-slate-500 backdrop-hue-rotate-90 text-red-500 ...">
+            <td className="finaltable">
               Columbus
             </td>
           </tr>
           <tr>
-            <td className="border border-slate-500 backdrop-hue-rotate-90 text-red-500 ...">
+            <td className="finaltable">
               Michigan
             </td>
-            <td className="border border-slate-500 backdrop-hue-rotate-90 text-red-500 ...">
+            <td className="finaltable">
               Detroit
             </td>
           </tr>
           <tr>
-            <td className="border border-slate-500 backdrop-hue-rotate-90 text-red-500 ...">
+            <td className="finaltable">
               Your Name, current level, decal or pin
             </td>
-            <td className="border border-slate-500 backdrop-hue-rotate-90 text-red-500 ...">
+            <td className="finaltable">
               You are on question 8/10
             </td>
           </tr>
         </tbody>
       </table>
-     
+     <div className="startagain">
       <Link to="/startpage" className="link-btn">
         Start Another Game?
       </Link>
+      </div>
     
     </div>
   );
