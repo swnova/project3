@@ -1,4 +1,4 @@
-import API from "../../utils/API.js";
+import API from "../../utils/api.js";
 import { useState, useEffect } from "react";
 
 const SearchResultContainer = () => {
@@ -16,14 +16,14 @@ const SearchResultContainer = () => {
     setResults();
   }, []);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    searchCar(search);
-  };
-  return (
-    <div>
-      <h1>Search Results</h1>
-    </div>
-  );
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   searchCar(search);
+  // };
+  // return (
+  //   <div>
+  //     <h1>Search Results</h1>
+  //   </div>
+  // );
 };
 export default SearchResultContainer;

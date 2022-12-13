@@ -26,9 +26,14 @@ body {
     text-align: center;
     max-width: 24vw;
     border-radius: 5px;
+    padding: 5px;
 }
 
 .column1 {
     border: 2px solid blue;
     border-radius: 2px;
+}
+
+.column div {
+    padding: 5px;
 }
