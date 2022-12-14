@@ -63,6 +63,9 @@ export default function LogIn({ props, currentPage, handlePageChange }) {
         <br />
         <input type="submit" value="Login" />
       </form>
+      <Link to="/startpage" className="link-btn">
+        Start Playing?
+      </Link>
     </div>
   );
 }

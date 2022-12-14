@@ -45,6 +45,9 @@ For a user trying to deploy this app from VScode...
 
 ## Screenshots:
 
+![Home Page](/public/images/screenhome.png "Main Screen")
+
+
 ## Contact:
 
 Sharrod Willanova : sharrodwillanova@gmail.com
