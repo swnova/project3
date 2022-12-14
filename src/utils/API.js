@@ -1,6 +1,6 @@
 import { useEffect, useState } from"react";
 import axios from "axios";
-
+// require("dotenv").config()
 
 export default function Api({ model }) {
   const url = "https://api.api-ninjas.com/v1/cars";
@@ -11,7 +11,7 @@ export default function Api({ model }) {
     console.log(model);
     axios
       .get(`https://api.api-ninjas.com/v1/cars?limit=1&model=${model}`, {
-        headers: { "X-Api-Key": "8/pRJvk+ZwQJnPqSvnqnbw==o05v27eRNMGl1nFx" },
+        headers: { "X-Api-Key": process.env.REACT_APP_API_KEY },
       })
       .then((response) => {
         console.log(response.data);
