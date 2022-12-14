@@ -33,7 +33,7 @@ export default function LogIn({ props, currentPage, handlePageChange }) {
       localStorage.setItem("playerLvl", data.player.playerLvl);
       localStorage.setItem("token", data.token);
       // change isLoggedIn to true
-      props.setIsLoggedIn(true);
+      
       alert("Login successful");
     } else {
 

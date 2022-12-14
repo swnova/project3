@@ -90,7 +90,7 @@ export default function Playpage({ currentPage, handlePageChange }) {
     // <Router>
     <div>
        
-      <img className="imagebox" img src={image} alt="vehicle display"></img>
+      <img className="img-fluid" img src={image} alt="vehicle display"></img>
       <div className="table d-inline-flex p-2">
         <div className="column">
           {options.map((item)=>{
