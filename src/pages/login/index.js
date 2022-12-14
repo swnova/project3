@@ -31,11 +31,10 @@ export default function LogIn({ props, currentPage, handlePageChange }) {
       localStorage.setItem("playerName", data.player.playerName);
       localStorage.setItem("email", data.player.email);
       localStorage.setItem("playerLvl", data.player.playerLvl);
+      localStorage.setItem("token", data.token);
       // change isLoggedIn to true
       props.setIsLoggedIn(true);
-      localStorage.setItem("token", data.token);
       alert("Login successful");
-      props.setisloggedin(true);
     } else {
 
       
@@ -63,6 +62,9 @@ export default function LogIn({ props, currentPage, handlePageChange }) {
         <br />
         <input type="submit" value="Login" />
       </form>
+      <Link to="/startpage" className="link-btn">
+        Start Playing?
+      </Link>
     </div>
   );
 }
