@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./header.css";
+import axios from "axios";
 
-function Header({ currentPage, handlePageChange }) {
+export function Header({ currentPage, handlePageChange }) {
   return (
     <div>
       <div className="header">

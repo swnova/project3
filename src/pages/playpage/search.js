@@ -1,12 +1,12 @@
-import API from "../../utils/api.js";
+import Api from "../../utils/api.js";
 import { useState, useEffect } from "react";
 
 const SearchResultContainer = () => {
   // Declare a new state variable, "results"
   const [results, setResults] = useState([]);
-  console.log(API);
+  console.log(Api);
   const searchCar = (query) =>
-    API.search(query)
+    Api.search(query)
       .then((res) => setResults(res.data))
       .catch();
 
