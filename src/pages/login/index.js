@@ -30,8 +30,10 @@ export default function LogIn({ props, currentPage, handlePageChange }) {
     if (data.token) {
       localStorage.setItem("token", data.token);
       alert("Login successful");
-      
+      props.setisloggedin(true);
     } else {
+
+      
       alert("Please check your username and password");
     }
   }
