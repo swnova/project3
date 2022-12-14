@@ -54,12 +54,13 @@ export default function Playpage({ currentPage, handlePageChange }) {
   const [answer, setAnswer]= useState('')
   const [image, setImage]= useState('')
   const [options, setOptions] = useState([])
-
-  const playerInfo = ()=>{
-    console.log(getMe)
-  }
-  playerInfo()
-
+  const [ level, setLevel]= useState([])
+  // const playerInfo = ()=>{
+  //   console.log(level)
+  // }
+  // playerInfo()
+  
+  
   const game = async ()=>{
     const data = await startGame()
     setStartQuestions(data)
@@ -67,13 +68,19 @@ export default function Playpage({ currentPage, handlePageChange }) {
    setImage(data.questions[0].imageUrl)
     setAnswer(data.questions[0].correctAnswer)
     setOptions(data.questions)
+    
     console.log(data)
   }
   const rightAnswer = (e)=>{
     const correctAnswer = e.target.value
     if (correctAnswer===answer){
-
-      alert("that is right!")
+      var levelUp = (parseInt(localStorage.getItem('playerLvl')))
+    
+       let newLevel = levelUp+1
+       console.log(newLevel)
+       localStorage.setItem("playerLvl", newLevel)
+       setLevel(newLevel)
+      alert(`that is right! Your LVL is ${level}`)
     } else (alert('incorrect!'))
     console.log(answer)
     console.log(e.target.value)
@@ -106,7 +113,7 @@ export default function Playpage({ currentPage, handlePageChange }) {
         Finished Playing?
       </Link>
         <div className="playagainbtn">
-        <button onClick={()=>game()}>Another Round?</button>
+        <button onClick={()=>game()}>START!</button>
         </div>
      
         
