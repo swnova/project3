@@ -24,19 +24,19 @@ function App() {
   return (
     <Router>
       <Header />
-      {isLoggedIn ? <p>loggedIn!</p> : <p>not logged in</p>}
+      
 
       <Routes>
         <Route path="/" element={<Cartrack />} />
         <Route
           path="/login"
           element={
-            <Login isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
+            <Login/>
           }
         />
         <Route
           path="/playpage"
-          element={<Playpage isLoggedIn={isLoggedIn} />}
+          element={<Playpage/>}
         />
         <Route path="/startpage" element={<Startpage />} />
         <Route path="/finalscore" element={<Finalscore />} />
