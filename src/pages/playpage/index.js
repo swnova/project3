@@ -1,12 +1,13 @@
-// import React, { useEffect } from "react";
-// import { useState, useEffect } from 'react';
+import React from "react";
+import { useState, useEffect } from 'react';
 import "./playpage.css";
+import { startGame, getMe } from "../../utils/api2";
 // import request from '.../api/codeninja.js'
 // import API from "../../utils/API";
 // import { getSearchParamsForLocation } from "react-router-dom/dist/dom";
-import SearchResultContainer from "./search";
+// import SearchResultContainer from "./search";
 import Modal from "react-modal";
-import { useState } from "react";
+// import { useState } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 // const SearchResultContainer = () => {
@@ -49,18 +50,53 @@ export default function Playpage({ currentPage, handlePageChange }) {
     setIsOpen(false);
   }
 
+  const [startQuestions, setStartQuestions] = useState('')
+  const [answer, setAnswer]= useState('')
+  const [image, setImage]= useState('')
+  const [options, setOptions] = useState([])
+
+  const playerInfo = ()=>{
+    console.log(getMe)
+  }
+  playerInfo()
+
+  const game = async ()=>{
+    const data = await startGame()
+    setStartQuestions(data)
+    console.log(startQuestions)
+   setImage(data.questions[0].imageUrl)
+    setAnswer(data.questions[0].correctAnswer)
+    setOptions(data.questions)
+    console.log(data)
+  }
+  const rightAnswer = (e)=>{
+    const correctAnswer = e.target.value
+    if (correctAnswer===answer){
+
+      alert("that is right!")
+    } else (alert('incorrect!'))
+    console.log(answer)
+    console.log(e.target.value)
+  }
+
   return (
     // <Router>
     <div>
-        
-      <div className="imagebox"></div>
+       
+      <img className="imagebox" img src={image} alt="vehicle display"></img>
       <div className="table d-inline-flex p-2">
         <div className="column">
-          asdfasdfdfdsfafsadasdfasdfaf
-          <div className="column1">asdfasdfdfdsfafsadasdfasdfaf</div>
-          <div className="column1">asdfasdfdfdsfafsadasdfasdfaf</div>
-          <div className="column1">asdfasdfdfdsfafsadasdfasdfaf</div>
-          <div className="column1">asdfasdfdfdsfafsadasdfasdfaf</div>
+          {options.map((item)=>{
+            return (
+              <div className="column1" key={item.question}>
+                {item.question}
+                {item.options.map((option)=>{
+                  return <button value={option} onClick={rightAnswer}> {option} </button>;
+                })}
+                </div>
+            );
+          })}
+          
           </div>
           
       
@@ -70,7 +106,7 @@ export default function Playpage({ currentPage, handlePageChange }) {
         Finished Playing?
       </Link>
         <div className="playagainbtn">
-        <button>Another Round?</button>
+        <button onClick={()=>game()}>Another Round?</button>
         </div>
      
         

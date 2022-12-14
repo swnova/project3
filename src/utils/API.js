@@ -1,5 +1,6 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from"react";
 import axios from "axios";
+
 
 export default function Api({ model }) {
   const url = "https://api.api-ninjas.com/v1/cars";
@@ -38,3 +39,7 @@ export default function Api({ model }) {
     </div>
   );
 }
+
+
+
+// export default { getMe, startGame, Api} 

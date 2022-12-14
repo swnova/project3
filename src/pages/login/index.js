@@ -28,6 +28,11 @@ export default function LogIn({ props, currentPage, handlePageChange }) {
     console.log(data);
 
     if (data.token) {
+      localStorage.setItem("playerName", data.player.playerName);
+      localStorage.setItem("email", data.player.email);
+      localStorage.setItem("playerLvl", data.player.playerLvl);
+      // change isLoggedIn to true
+      props.setIsLoggedIn(true);
       localStorage.setItem("token", data.token);
       alert("Login successful");
       props.setisloggedin(true);
