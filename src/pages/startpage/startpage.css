@@ -1,0 +1,44 @@
+.single-button{
+    width: 150px;
+    height: 40px;
+    
+
+}
+.multi-button{
+    width: 150px;
+    height: 40px;
+    
+}
+.buttoncontainer{
+    text-align: center;
+   
+    
+}
+
+.statcard {
+    border: solid 10px greenyellow;
+    border-radius: 9px;
+    margin: 10px;
+    margin-left: 15vw;
+    width: 40vw;
+
+    
+    justify-content: center;
+    column-gap: 20px;
+    align-items: center;
+    padding: 10px;
+}
+
+.link-btn {
+    border: solid 10px greenyellow;
+    border-radius: 9px;
+    margin: 10px;
+    margin-left: 15vw;
+    width: 40vw;
+
+    
+    justify-content: center;
+    column-gap: 20px;
+    align-items: center;
+    padding: 10px;
+}

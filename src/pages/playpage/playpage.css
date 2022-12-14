@@ -1,0 +1,66 @@
+body {
+    background-color: limegreen;
+}
+
+.imagebox {
+    background-image: url("https://www.clipartmax.com/png/middle/84-842352_cars-clip-art-images-free-for-commercial-use-coche-clipart.png");
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-bottom: 10vh;
+}
+
+.table{
+    justify-content: center;
+    flex-wrap: wrap;
+     border-radius: 10px;
+     align-items: center;
+    
+    
+}
+
+.column {
+    border: 10px solid greenyellow;
+    flex-grow: 1;
+    text-align: center;
+    max-width: 30vw;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10vh;
+}
+
+.column1 {
+    border: 7px solid blue;
+    border-radius: 2px;
+}
+
+.column div {
+    padding: 5px;
+}
+
+.playagainbtn {
+    padding: 5px;
+  background-color: #61dafb;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  color:black;
+  font-weight: bolder;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border: solid 10px greenyellow;
+  border-radius: 9px;
+margin: 10px;
+    width: 40vw;
+    display: inline-flex;
+    margin-bottom: 15vh;
+    justify-content: center;
+    column-gap: 20px;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.playagainbtn:hover {
+    background-color: limegreen;
+}

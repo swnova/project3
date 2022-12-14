@@ -1,0 +1,26 @@
+.border-current {
+border-color: greenyellow;
+border-radius: 5px;
+display: flex;
+justify-content: center;
+column-gap: 20px;
+align-items: center;
+padding: 10px;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.border-current a:hover {
+    text-decoration: underline;
+}
+.title {
+    color: red;
+    font-weight: 700;
+    font-size: xxx-large;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+
+}
+
+.header {
+    background-color: rgb(62, 171, 62);
+}

@@ -1,0 +1,17 @@
+body {
+    background-color: limegreen;
+}
+
+.loginbox {
+    border: solid 3px greenyellow;
+    border-radius: 9px;
+    margin: 10px;
+    margin-left: 15vw;
+    width: 35vw;
+    
+    justify-content: center;
+    column-gap: 20px;
+    align-items: center;
+    padding: 10px;
+    
+}

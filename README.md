@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+## Vroom
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
 
-## Available Scripts
+- [Description](#description)
+- [User Story](#user-story)
+- [Acceptance Criteria](#acceptance-criteria)
+- [Languages](#languages)
+- [Usage](#usage)
+- [Deployed](#deployed)
+- [Screenshots](#screenshots)
+- [Contact](#contact)
 
-In the project directory, you can run:
+## Description:
 
-### `npm start`
+Vroom is a multiple choice car game for vehicle enthusiasts. Players will be required to log in or register. This will store the points and level that they have accumilated. A image will be shown and multiple questions will be asked pertaining to that vehicle. At the end the total correct and incorrect points will be tallied. The points will be added to the players current points, this will either cause the player to simply have more points or to level up at which point the player will have their points reduced but will have a higher playing status and will therefor be asked more questions about every vehicle, raising the difficulty of the quiz.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## User Story:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+As a user of the app
+I want to play a game to test my knowledge of vehicles, as well as have recognition for my superior knowledge, displayed in my level for all to see.
 
-### `npm test`
+## Acceptance Criteria:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Languages:
 
-### `npm run build`
+Javascript
+React
+CSS
+Tailwind
+HTML
+Node/Express
+MongoDB
+Apollo Server
+Router
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Usage:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The user simply has to visit the website. Upon visiting the site the user will be required to either log in or to register as a new player, this is to store player data, such as points accumilated and player status. The user will then play a multiple choice game and will score points that will affect the players level and status, the player will then play again or log out.
+For a user trying to deploy this app from VScode...
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Deployed:
 
-### `npm run eject`
+[Deployed Website]()
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Screenshots:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Home Page](/public/images/screenhome.png "Main Screen")
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Contact:
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Sharrod Willanova : sharrodwillanova@gmail.com
+Artem Khomenko : artem011202@gmail.com
+Tiffany Marko : tiffanymarko@gmail.com
+Phillip Sean Anthony: sammybanthony1@gmail.com
