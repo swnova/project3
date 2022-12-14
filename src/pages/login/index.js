@@ -8,14 +8,10 @@ export default function LogIn({ props, currentPage, handlePageChange }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleFormSubmit = (e) => {
-    e.preventDefault();
-    loginUser();
-  };
-
-  async function loginUser() {
+  async function handleFormSubmit(event) {
+    event.preventDefault()
     const response = await fetch(
-      "https://vroom-backendsw.herokuapp.com/api/players/login",
+      "https://vroom-backendsw.herokuapp.com/api/players/login/",
       {
         method: "POST",
         headers: {
@@ -32,12 +28,12 @@ export default function LogIn({ props, currentPage, handlePageChange }) {
     console.log(data);
 
     if (data.token) {
-      localStorage.setItem("token", data.user);
-      // change isLoggedIn to true
-      props.setIsLoggedIn(true);
+      localStorage.setItem("token", data.token);
       alert("Login successful");
-      // window.location.href = '/playerpage'
+      props.setisloggedin(true);
     } else {
+
+      
       alert("Please check your username and password");
     }
   }
@@ -62,9 +58,6 @@ export default function LogIn({ props, currentPage, handlePageChange }) {
         <br />
         <input type="submit" value="Login" />
       </form>
-      <Link to="/startpage" className="link-btn">
-        Start Playing?
-      </Link>
     </div>
   );
 }
