@@ -113,7 +113,7 @@ export default function Playpage({ currentPage, handlePageChange }) {
         Finished Playing?
       </Link>
         <div className="playagainbtn">
-        <button onClick={()=>game()}>START!</button>
+        <button onClick={()=>game()}>Load a Question</button>
         </div>
      
         
