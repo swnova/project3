@@ -1,34 +1,25 @@
 import Card from "react-bootstrap/Card";
-import {useEffect} from 'react';
+import "./playercard.css";
 
+function BasicExample(){
+  let playerName = "";
+  let playerLvl = "";
+  let playeremail ="";
 
-function BasicExample(props) {
-  let playerName = ''
-  let playerLvl = ''
-  playerName = localStorage.getItem("playerName")
-  playerLvl= localStorage.getItem('playerLvl')
-  console.log(playerName)
-useEffect(() =>{
  playerName = localStorage.getItem("playerName")
  playerLvl= localStorage.getItem('playerLvl')
- if (playerName===''){
-  console.log('player name doesnt exist.')
- } else {
-  console.log(playerName)
-  console.log(typeof playerLvl)
- } 
- 
- 
+ playeremail = localStorage.getItem('email')
 
-  
-})
-  return (
-    <Card>
+
+return (
+    <Card className="card">
       <Card.Body>
-        <Card.Title>Player Stats</Card.Title>
         <Card.Text>
-          <h2> player name :{playerName}</h2>
-          <h2>player level :{playerLvl}</h2>
+          <h1> {playerName}</h1>
+          <br/>
+          <div className="line1">Email: {playeremail} </div>
+          <br/>
+          <div className="line2">Player level: {playerLvl}</div>
         </Card.Text>
       </Card.Body>
     </Card>
