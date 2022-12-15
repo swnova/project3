@@ -27,7 +27,7 @@ I want to play a game to test my knowledge of vehicles, as well as have recognit
 Javascript
 React
 CSS
-Tailwind
+React/Bootstrap
 HTML
 Node/Express
 MongoDB

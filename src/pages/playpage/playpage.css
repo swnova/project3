@@ -64,3 +64,7 @@ margin: 10px;
 .playagainbtn:hover {
     background-color: limegreen;
 }
+.questionImg{
+    max-width: 300px;
+    align-items: center ;
+}

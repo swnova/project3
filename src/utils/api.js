@@ -11,7 +11,7 @@ export default function Api({ model }) {
     console.log(model);
     axios
       .get(`https://api.api-ninjas.com/v1/cars?limit=1&model=${model}`, {
-        headers: { "X-Api-Key": process.env.REACT_APP_API_KEY },
+        headers: { "X-Api-Key":"2PB4DdJvAhQxf14q94FJnQ==YrtBIc7J9Oy1RSpy"},
       })
       .then((response) => {
         console.log(response.data);

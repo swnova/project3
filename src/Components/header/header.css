@@ -14,13 +14,17 @@ font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 .title {
     color: red;
-    font-weight: 700;
-    font-size: xxx-large;
+    font-weight: 700; 
+    font-size: 80px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
-
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .header {
     background-color: rgb(62, 171, 62);
+}
+#font{
+    font-size: 30px;
+    justify-content: center;
+   
 }
