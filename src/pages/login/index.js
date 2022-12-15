@@ -9,7 +9,7 @@ export default function LogIn({ props, currentPage, handlePageChange }) {
   const [password, setPassword] = useState("");
 
   async function handleFormSubmit(event) {
-    event.preventDefault()
+    event.preventDefault();
     const response = await fetch(
       "https://vroom-backendsw.herokuapp.com/api/players/login/",
       {
@@ -36,8 +36,6 @@ export default function LogIn({ props, currentPage, handlePageChange }) {
       
       alert("Login successful");
     } else {
-
-      
       alert("Please check your username and password");
     }
   }
