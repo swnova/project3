@@ -18,11 +18,8 @@
 .statcard {
     border: solid 10px greenyellow;
     border-radius: 9px;
-    margin: 10px;
-    margin-left: 15vw;
-    width: 40vw;
-
-    
+    margin: 0 auto;
+    width: fit-content;
     justify-content: center;
     column-gap: 20px;
     align-items: center;
@@ -32,13 +29,23 @@
 .link-btn {
     border: solid 10px greenyellow;
     border-radius: 9px;
-    margin: 10px;
-    margin-left: 15vw;
-    width: 40vw;
-
-    
+    margin: 0 auto;
+    width: fit-content;
+    margin-top: 12px;
+    display: block;
     justify-content: center;
     column-gap: 20px;
     align-items: center;
     padding: 10px;
+}
+
+.statcard > .card {
+    margin: 0 auto;
+    min-width: 350px;
+}
+
+@media(min-width: 64em){
+    .statcard {
+        width: 40vw;
+    }
 }
