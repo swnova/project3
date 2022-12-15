@@ -8,6 +8,7 @@
     display: flex;
     flex-wrap: wrap;
 }
+
 .playerstat{
     width: 40%;
     column-gap: 20px;

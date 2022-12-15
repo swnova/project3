@@ -10,6 +10,7 @@ function BasicExample(){
  playerLvl= localStorage.getItem('playerLvl')
  playeremail = localStorage.getItem('email')
 
+
 return (
     <Card className="card">
       <Card.Body>
