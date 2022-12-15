@@ -1,0 +1,26 @@
+.statcard{
+    border: solid 10px greenyellow;
+    border-radius: 40px;
+    width: 60%;
+    column-gap: 20px;
+    padding: 30px;
+    margin: auto; 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.playerstat{
+    width: 40%;
+    column-gap: 20px;
+    text-align: center;
+    padding: 30px;
+    margin: auto; 
+}
+.buttons{
+    color:black
+}
+img{
+    max-height: 200px;
+    border-radius: 10px;
+    margin: auto;
+}

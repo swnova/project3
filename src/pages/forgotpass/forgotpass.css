@@ -1,0 +1,38 @@
+body {
+    background-color: limegreen;
+}
+
+.loginbox {
+   border: solid 3px greenyellow;
+    border-radius: 9px;
+    width: 40%;
+     padding: 10px;
+    margin: auto;
+    
+}
+p{
+    
+}
+.buttons{
+    margin: 15px;
+    color: black;
+    text-decoration: none;
+}
+.buttons:hover{
+    text-decoration: none;
+    color: greenyellow;
+}
+.loginbtn:hover{
+    background-color: greenyellow;
+
+}
+@media screen and (max-width: 480px) {
+   .loginbox{
+    width: 90%;
+   }
+  }
+@media screen and (max-width: 850px) {
+    .loginbox{
+     width: 70%;
+    }
+   }

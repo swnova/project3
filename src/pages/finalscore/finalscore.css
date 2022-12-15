@@ -1,0 +1,20 @@
+
+.finalpage {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    gap: 10px;
+}
+
+.finaltable {
+    border: 8px solid greenyellow;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.finaltablehead {
+    border: 8px solid greenyellow;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: x-large;
+    
+}
