@@ -5,7 +5,7 @@ import axios from "axios";
 export default function Api({ model }) {
   const url = "https://api.api-ninjas.com/v1/cars";
 
-  // const [car, setCar] = useState([]);
+  const [car, setCar] = useState([]);
 
   // useEffect(() => {
   //   console.log(model);
