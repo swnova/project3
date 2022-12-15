@@ -8,11 +8,19 @@ export default function StartPage({ currentPage, handlePageChange }) {
     <div>
       <div className="statcard">
         <PlayerCard />
+        <img variant="top" src="https://res.cloudinary.com/dxmxtpumw/image/upload/c_scale,h_2093,q_100/v1670959256/tim-trad-2gk6BDXSxlQ-unsplash_yzik9x.jpg" />
       </div>
-      <div className="playerstat"></div>
-      <Link to="/playpage" className="link-btn">
-        Start Game?
+      <div className="playerstat">
+      <Link to="/playpage" className="buttons">
+        Start Game
       </Link>
+      <Link to="/" className="buttons">
+        Save Game
+      </Link>
+      <Link to="/" className="buttons">
+        Edit Profile
+      </Link>
+      </div>
     </div>
   );
 }

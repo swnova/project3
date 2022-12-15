@@ -7,7 +7,7 @@
 /* Sky Styling */
 .sky {
     width: 100vw;
-    height: calc(100vh - 128px);
+    height: calc(100vh - 170px);
     background-image: url(sky.jpeg);
     background-repeat: no-repeat;
     background-size: cover;

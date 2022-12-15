@@ -1,18 +1,17 @@
 body {
     background-color: limegreen;
 }
-h1{
-    margin:auto;
-}
 
 .loginbox {
    border: solid 3px greenyellow;
-    border-radius: 40px;
+    border-radius: 9px;
     width: 40%;
-    column-gap: 20px;
-    text-align: center;
-    padding: 30px;
-    margin: auto; 
+     padding: 10px;
+    margin: auto;
+    
+}
+p{
+    
 }
 .buttons{
     margin: 15px;

@@ -1,44 +1,26 @@
-.single-button{
-    width: 150px;
-    height: 40px;
-    
+.statcard{
+    border: solid 10px greenyellow;
+    border-radius: 40px;
+    width: 60%;
+    column-gap: 20px;
+    padding: 30px;
+    margin: auto; 
+    display: flex;
+    flex-wrap: wrap;
+}
 
-}
-.multi-button{
-    width: 150px;
-    height: 40px;
-    
-}
-.buttoncontainer{
+.playerstat{
+    width: 40%;
+    column-gap: 20px;
     text-align: center;
-   
-    
+    padding: 30px;
+    margin: auto; 
 }
-
-.statcard {
-    border: solid 10px greenyellow;
-    border-radius: 9px;
-    margin: 10px;
-    margin-left: 15vw;
-    width: 40vw;
-
-    
-    justify-content: center;
-    column-gap: 20px;
-    align-items: center;
-    padding: 10px;
+.buttons{
+    color:black
 }
-
-.link-btn {
-    border: solid 10px greenyellow;
-    border-radius: 9px;
-    margin: 10px;
-    margin-left: 15vw;
-    width: 40vw;
-
-    
-    justify-content: center;
-    column-gap: 20px;
-    align-items: center;
-    padding: 10px;
+img{
+    max-height: 200px;
+    border-radius: 10px;
+    margin: auto;
 }

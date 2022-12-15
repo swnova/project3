@@ -1,62 +1,56 @@
 import React from "react";
-import "./login.css";
+import "./registerpage.css";
 import { useState } from 'react'
+import { Link } from "react-router-dom";
 
 
-export default function register() {
-	const [name, setName] = useState('')
-	const [email, setEmail] = useState('')
-	const [password, setPassword] = useState('')
+export default function Register(props) {
 
-	async function registerUser(event) {
-		event.preventDefault()
+	const [name, setName] = useState("")
+	const [email, setEmail] = useState("")
+	const [password, setPassword] = useState("")
 
-		const response = await fetch('https://vroom-backendsw.herokuapp.com/api/players', {
-			method: 'POST',
-			headers: {
-				'Content-Type': 'application/json',
-			},
-			body: JSON.stringify({
-				name,
-				email,
-				password,
-			}),
-		})
-
-		const data = await response.json()
-
-		if (data.status === 'ok') {
-			history.push('/login')
-            window.location.href = '/playerpage'
-		}
-	}
+    const registerUser=event=>{
+        event.preventDefault();
+        props.handleSignupSubmit({
+          playerName: name,
+          email:email,
+          password:password
+        })
+      }
   return (
-    <div>
+    <div class="registerbox">
     <h1>Register</h1>
     <form onSubmit={registerUser}>
+      <div class="input1">
         <input
+
             value={name}
             onChange={(e) => setName(e.target.value)}
             type="text"
             placeholder="Name"
         />
-        <br />
+        </div>
+        <div class="input1">
         <input
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             type="email"
             placeholder="Email"
         />
-        <br />
+        </div>
+        <div class="input1">
         <input
+
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             type="password"
             placeholder="Password"
         />
-        <br />
-        <input type="submit" value="Register" />
+        </div>
+        <input className="registerbtn" type="submit" value="Register" />
     </form>
+    <Link to="/login" className="buttons">Back</Link>
 </div>
   )
 }
