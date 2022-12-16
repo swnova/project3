@@ -1,26 +1,26 @@
 import { useEffect, useState } from"react";
 import axios from "axios";
-// require("dotenv").config()
+require("dotenv").config()
 
 export default function Api({ model }) {
   const url = "https://api.api-ninjas.com/v1/cars";
 
   const [car, setCar] = useState([]);
 
-  // useEffect(() => {
-  //   console.log(model);
-  //   axios
-  //     .get(`https://api.api-ninjas.com/v1/cars?limit=1&model=${model}`, {
-  //       headers: { "X-Api-Key":"2PB4DdJvAhQxf14q94FJnQ==YrtBIc7J9Oy1RSpy"},
-  //     })
-  //     .then((response) => {
-  //       console.log(response.data);
-  //       setCar(response.data);
-  //     })
-  //     .catch((err) => {
-  //       console.log(err);
-  //     });
-  // }, []);
+  useEffect(() => {
+    console.log(model);
+    axios
+      .get(`https://api.api-ninjas.com/v1/cars?limit=1&model=${model}`, {
+        headers: { "X-Api-Key":process.env.REACT_APP_API_KEY },
+      })
+      .then((response) => {
+        console.log(response.data);
+        setCar(response.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
 
   return (
     <div className="App">
